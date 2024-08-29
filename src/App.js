@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+import { Fragment } from 'react'
 import './App.css';
+import NetFlix from './component/NetFlix';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Fragment>
+      <NetFlix />
+    </Fragment>
   );
 }
 
