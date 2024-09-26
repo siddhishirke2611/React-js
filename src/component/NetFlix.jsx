@@ -3,29 +3,21 @@ import SeriesData from '../api/SeriesData.json';
 
 const NetFlix = () => {
     return (
-        <ul>
-            {SeriesData.map((curElem) => {
-                return (
-                    <li key={curElem.id}>
-                        <div>
-                            <img src={curElem.img_url}
-                                width="40%"
-                                height="40%"
-                                alt='img' />
-                        </div>
-                        <h2>Name: {curElem.name}</h2>
-                        <h3>Ratings: {curElem.rating}</h3>
-                        <p>Description: {curElem.description}</p>
-                        <p>Genre:{curElem.genre} </p>
-                        <p>Cast: {curElem.cast}</p>
-                        <a href={curElem.watch_url} target='_blank'>
-                            <button>Watch Now</button>
-                        </a>
-                    </li>
-                )
-            })}
+        <>
+            <div>
+                <div>
+                    <img src='ban1.png' alt='banner' width="40%" height="40%"/>
+                </div>
+                <h2>Name : Queen of tears</h2>
+                <h3>Rating: 8.2</h3>
+                <h3>Summery: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cum doloribus accusamus iste, harum error animi modi eos
+                    laboriosam numquam iure et debitis provident aliquid excepturi
+                    tenetur nisi blanditiis. Culpa, quae?
+                </h3>
+            </div>
+        </>
 
-        </ul>
     )
 }
 
